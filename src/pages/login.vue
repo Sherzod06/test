@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 h-screen">
+  <div class="bg-gray-100 h-screen flex justify-center">
     <div class="max-w-screen-sm my-auto mx-auto p-5">
       <div class="flex justify-center mb-3">
         <img src="@/assets/icons/logo.svg" alt="">
@@ -17,8 +17,13 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
               Parol
             </label>
-            <BaseInput id="first-name" placeholder="first name" v-model="name" />
+            <BaseInput type="password" id="first-name" placeholder="first name" v-model="password" />
             <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+          </div>
+          <div class="w-full px-3 mt-2">
+            <BaseButton class="w-full">
+              Kirish
+            </BaseButton>
           </div>
         </div>
       </form>
